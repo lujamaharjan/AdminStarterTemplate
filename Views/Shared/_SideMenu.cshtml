@@ -1,0 +1,82 @@
+﻿
+
+<!--Left side bar start-->
+<aside id="leftsidebar" class="sidebar">
+    
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="list">
+            
+            <li class='@Html.IsMenuActive("Home", "Index")'>
+                <a>
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li class='@Html.IsMenuActive("Account", "Index,UserList")'>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">group</i>
+                    <span>Account</span>
+                </a>
+                <ul class="ml-menu">
+
+                    <li class ='@Html.IsMenuActive("Account", "UserList")'>
+                        <a asp-controller="Account" asp-action="UserList">User List</a>
+                    </li>
+                    <li>
+                        <a href="#">Create</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class ='@Html.IsMenuActive("Stock", "Index")'>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">folder_open</i>
+                    <span>Stocks</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="#">stock</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class='@Html.IsMenuActive("Request", "Index")'>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">whatshot</i>
+                    <span>Requests</span>
+                </a>
+                <ul class="ml-menu">
+
+                    <li>
+                        <a asp-controller="Request" asp-action="UserList">User List</a>
+                    </li>
+                    <li>
+                        <a href="#">Create</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class='@Html.IsMenuActive("DispatchOrder", "Index")'>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">store</i>
+                    <span>Dispatch Orders</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</aside>
+<!--Left side bar End-->
+
+
+ 
